@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "capistrano-shared_file"
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["teohm"]
-  s.date = "2012-05-10"
+  s.date = "2012-05-11"
   s.description = "\n    To use the recipe, add the following lines to config/deploy.rb: \n  \n    #set :shared_files, %w(config/database.yml) # optional, as it's the default value\n    require 'capistrano/shared_file'\n  "
   s.email = "teohuiming@gmail.com"
   s.extra_rdoc_files = [
@@ -19,10 +19,13 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
-    "VERSION"
+    "VERSION",
+    "capistrano-shared_file.gemspec",
+    "lib/capistrano/shared_file.rb"
   ]
   s.homepage = "http://github.com/teohm/capistrano-shared_file"
   s.licenses = ["MIT"]
