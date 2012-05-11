@@ -1,9 +1,18 @@
 = capistrano-shared_file
 
-Capistrano recipe to symlink shared files e.g. config/database.yml 
+A Capistrano recipe to symlink shared files e.g. config/database.yml 
 stored in shared path to release path.
 
-To use the recipe, add the following lines to config/deploy.rb: 
+== Install
+
+    gem install capistrano-shared_file
+
+For Bundler, add this to your <tt>Gemfile</tt>:
+
+    gem 'capistrano-shared_file'
+
+== Using
+Add the following lines to config/deploy.rb: 
   
     #set :shared_files, %w(config/database.yml) # optional, as it's the default value
     require 'capistrano/shared_file'
