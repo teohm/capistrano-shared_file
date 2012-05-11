@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "capistrano-shared_file"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["teohm"]
   s.date = "2012-05-11"
-  s.description = "\n    To use the recipe, add the following lines to config/deploy.rb: \n  \n    #set :shared_files, %w(config/database.yml) # optional, as it's the default value\n    require 'capistrano/shared_file'\n  "
+  s.description = "Capistrano recipe to symlink shared files e.g. config/database.yml"
   s.email = "teohuiming@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
