@@ -12,7 +12,7 @@ For Bundler, add this to your <tt>Gemfile</tt>:
     gem 'capistrano-shared_file'
 
 == Using
-Add the following lines to config/deploy.rb: 
+Add the following lines to <tt>config/deploy.rb</tt>: 
   
     #set :shared_files, %w(config/database.yml) # optional, as it's the default value
     require 'capistrano/shared_file'
