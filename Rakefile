@@ -18,12 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/teohm/capistrano-shared_file"
   gem.license = "MIT"
   gem.summary = %Q{Capistrano recipe to symlink shared files e.g. config/database.yml}
-  gem.description = %Q{
-    To use the recipe, add the following lines to config/deploy.rb: 
-  
-    #set :shared_files, %w(config/database.yml) # optional, as it's the default value
-    require 'capistrano/shared_file'
-  }
+  gem.description = %Q{Capistrano recipe to symlink shared files e.g. config/database.yml}
   gem.email = "teohuiming@gmail.com"
   gem.authors = ["teohm"]
   # dependencies defined in Gemfile
