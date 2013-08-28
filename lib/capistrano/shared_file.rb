@@ -18,7 +18,7 @@ if Capistrano::Configuration.instance
     # Make sure you understand the implication when you modify them.
     # ================================================================
     _cset :shared_file_dir, "files"
-    _cset(:shared_file_path) { File.join(shared_path, shared_file_dir) }
+    _cset(:shared_file_path) { File.join(shared_path, shared_file_dir).sub(/#{File::SEPARATOR}$/,'') }
 
 
     # ================================================================
