@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "capistrano-shared_file"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["teohm"]
-  s.date = "2012-05-11"
+  s.date = "2013-08-28"
   s.description = "Capistrano recipe to symlink shared files e.g. config/database.yml"
   s.email = "teohuiming@gmail.com"
   s.extra_rdoc_files = [
@@ -30,11 +30,11 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/teohm/capistrano-shared_file"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "2.0.7"
   s.summary = "Capistrano recipe to symlink shared files e.g. config/database.yml"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
