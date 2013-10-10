@@ -15,9 +15,10 @@ if Capistrano::Configuration.instance
 
     # ================================================================
     # These variables define where to store the shared files.
+    # Defaults to the main 'shared_path' location.
     # Make sure you understand the implication when you modify them.
     # ================================================================
-    _cset :shared_file_dir, "files"
+    _cset :shared_file_dir, ""
     _cset(:shared_file_path) { File.join(shared_path, shared_file_dir).sub(/#{File::SEPARATOR}$/,'') }
 
 
